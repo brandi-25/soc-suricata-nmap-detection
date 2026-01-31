@@ -48,8 +48,8 @@ Alerts were logged in JSON format via eve.json, confirming successful detection.
 ## Example alert output:
 {
   "event_type": "alert",
-  "src_ip": "192.168.8.x",
-  "dest_ip": "192.168.8.x",
+  "attacker_ip": "192.168.8.x",
+  "internal_host_ip": "192.168.8.x",
   "proto": "TCP",
   "signature": "TEST TCP ALERT",
   "severity": 3,
