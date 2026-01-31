@@ -32,7 +32,7 @@ From the Kali Linux system, multiple Nmap scans were executed against the Ubuntu
 
 Example scan:
 ```bash
-nmap -sS -p 1-1000 192.168.8.155
+nmap -sS -p 1-1000 192.168.8.x
 
 Although the target system had no open services, the scan traffic still generated network probes consistent with reconnaissance behavior.
 Detection & Alerts
@@ -48,8 +48,8 @@ Alerts were logged in JSON format via eve.json, confirming successful detection.
 ## Example alert output:
 {
   "event_type": "alert",
-  "src_ip": "192.168.8.183",
-  "dest_ip": "192.168.8.155",
+  "src_ip": "192.168.8.x",
+  "dest_ip": "192.168.8.x",
   "proto": "TCP",
   "signature": "TEST TCP ALERT",
   "severity": 3,
